@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8">
+  </head>
+  <body>
+      <h1>Ice Cream Bot for friends</h1>
+       <img src="https://thebrag.com/wp-content/uploads/2019/09/Robot-Icecream-400x200.jpg">
+       <br>
+      <p>
+        {{ friend_output }}
+      </p>
+      <p>
+        {{ city_weather }}
+      </p>     
+      <p>
+        {{ conclusion }}
+      </p>
+      <form action="/" method="post">
+        <h2>Choose your friend</h2>
+          {{ friends|safe }}
+        <h2>Choose ice cream</h2>
+          {{ icecreams|safe }}
+        <br>
+        <input type="submit" value="Treat">
+      </form>
+
+  </body>
+</html>
